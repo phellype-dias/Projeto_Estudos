@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <link rel="stylesheet" href="./static/styles/inicio.css">
+    <link rel="stylesheet" href="./static/styles/_header.css">
+    <link rel="stylesheet" href="./static/styles/_footer.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>Início</title>
+    <script src="./static/js/load_partials.js" defer></script>
+</head>
+<body>
+    <header id="header" class="header-template-one"></header>
+
+    <section class="home-container">
+
+        <div class="banner-content">
+            <div class="slider">
+                <div class="list">
+                    <div class="item">
+                        <img src="./static/assets/images/banner_carros.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="./static/assets/images/banner_2000x500px-1.png" alt="">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div id="prev">
+                        <i class='bx bxs-chevron-left' ></i>
+                    </div>
+                    <div id="next">
+                        <i class='bx bxs-chevron-right'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="filters-container">
+            <div class="filters-content">
+    
+                <div class="text-container-filters">
+                    <h3 class="tittle">Pensando em comprar um carro novo?</h3>
+                    <h3>Encontre aqui as melhores ofertas</h3>
+                </div>
+    
+                <div class="div-filters">
+                    <div class="div-selects">
+                        <div>
+                            <select name="select-marca" id="select-marca">
+                                <option value="" disabled hidden selected>Marca</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select name="select-modelo" id="select-modelo">
+                                <option value="" disabled hidden selected>Modelo</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select name="select-ano" id="select-ano">
+                                <option value="" disabled hidden selected>Ano</option>
+                            </select>
+                        </div>
+                        <div>
+                            <button class="btn-submit-filter" type="submit">
+                                <i class='bx bx-search'></i>
+                                Buscar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="div-range">
+                        <p>Preço ($)</p>
+                        
+                        <div class="range-slider">
+                            <div class="range-fill"></div>
+                            
+                            <input type="range" class="min-price" value="47900" min="47900" max="414900" step="10">
+                            <input type="range" class="max-price" value="414900" min="47900" max="414900" step="10">
+                        </div>
+                        <div class="price-container">
+                            <div>
+                                <p id="min-value">R$47900</p>
+                            </div>
+                            <div>
+                                <p id="max-value">R$414900</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+
+        <div class="destaques-container">
+            <div class="destaques-content">
+                <div class="text-container">
+                    <h3 class="title-section">Veículos em Destaques</h3>
+                    <p class="subtext-section">Carros novos e usados, confira os veículos mais recentes cadastrados em nosso <a href="">estoque.</a></p>
+                </div>
+
+                <div class="row-container">
+                        <div class="card">
+                            <div class="card-veiculo-imagem">
+                                <a href="./template/veiculo.html">
+                                    <img src="./static/assets/images/imagem miniatura veiculo.jpeg" alt="">
+                                </a>
+                            </div>
+                            <div class="card-veiculo-infos">
+                                <h2 class="tittle-container-veiculos">
+                                    <a href="./template/veiculo.html">
+                                        <div class="tittle-veiculo">
+                                            <span class="name-veiculo">Citroën - C3</span>
+                                            <span class="complemento-veiculo">Live Pack 1.0 Flex 6V 5p Mec. - 2023</span>
+                                        </div>
+                                    </a>
+                                </h2>
+
+                                <div class="div-price">
+                                    <p class="price-veiculo"> R$ 68.900,00</p>
+                                </div>
+
+                            </div>
+                            <div class="div-lista-infos">
+                                <ul class="list-infos-veiculo">
+                                    <li>
+                                        <i class='bx bxs-tachometer'></i>
+                                        46.980
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-git-merge' ></i>
+                                        Manual
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-calendar'></i>
+                                        2023
+                                    </li>
+                                    <li>
+                                        <i class='bx bxs-gas-pump' ></i>
+                                        Álc./Gasol.
+                                    </li>
+                                    <li>
+                                        <i class='bx bxs-brush'></i>
+                                        Branca
+                                    </li>
+                                    <li>
+                                        4 Portas
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-veiculo-whats">
+                                <a href="https://wa.me/5547991224281" target="_blank">
+                                    <span>Whatsapp</span>
+                                    <i class='bx bxl-whatsapp'></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-veiculo-imagem">
+                                <a href="./template/veiculo.html">
+                                    <img src="./static/assets/images/carro teste 2.jpeg" alt="">
+                                </a>
+                            </div>
+                            <div class="card-veiculo-infos">
+                                <h2 class="tittle-container-veiculos">
+                                    <a href="./template/veiculo.html">
+                                        <div class="tittle-veiculo">
+                                            <span class="name-veiculo">Volkswagen - Polo</span>
+                                            <span class="complemento-veiculo">Flex 12V 5p - 2020</span>
+                                        </div>
+                                    </a>
+                                </h2>
+
+                                <div class="div-price">
+                                    <p class="price-veiculo"> R$ 66.900,00</p>
+                                </div>
+
+                            </div>
+                            <div class="div-lista-infos">
+                                <ul class="list-infos-veiculo">
+                                    <li>
+                                        <i class='bx bxs-tachometer'></i>
+                                        105.083
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-git-merge' ></i>
+                                        Manual
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-calendar'></i>
+                                        2020
+                                    </li>
+                                    <li>
+                                        <i class='bx bxs-gas-pump' ></i>
+                                        Álc./Gasol.
+                                    </li>
+                                    <li>
+                                        <i class='bx bxs-brush'></i>
+                                        Prata
+                                    </li>
+                                    <li>
+                                        4 Portas
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-veiculo-whats">
+                                <a href="https://wa.me/5547991224281" target="_blank">
+                                    <span>Whatsapp</span>
+                                    <i class='bx bxl-whatsapp'></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-veiculo-imagem">
+                                <a href="./template/veiculo.html">
+                                    <img src="./static/assets/images/carro teste 3.jpeg" alt="">
+                                </a>
+                            </div>
+                            <div class="card-veiculo-infos">
+                                <h2 class="tittle-container-veiculos">
+                                    <a href="./template/veiculo.html">
+                                        <div class="tittle-veiculo">
+                                            <span class="name-veiculo">Fiat - Fiorino</span>
+                                            <span class="complemento-veiculo">Endurance EVO 1.4 Flex 8V 2p - 2024</span>
+                                        </div>
+                                    </a>
+                                </h2>
+
+                                <div class="div-price">
+                                    <p class="price-veiculo"> R$ 102.900,00</p>
+                                </div>
+
+                            </div>
+                            <div class="div-lista-infos">
+                                <ul class="list-infos-veiculo">
+                                    <li>
+                                        <i class='bx bxs-tachometer'></i>
+                                        52.321
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-git-merge' ></i>
+                                        Manual
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-calendar'></i>
+                                        2024
+                                    </li>
+                                    <li>
+                                        <i class='bx bxs-gas-pump' ></i>
+                                        Álc./Gasol.
+                                    </li>
+                                    <li>
+                                        <i class='bx bxs-brush'></i>
+                                        Branca
+                                    </li>
+                                    <li>
+                                        2 Portas
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-veiculo-whats">
+                                <a href="https://wa.me/5547991224281" target="_blank">
+                                    <span>Whatsapp</span>
+                                    <i class='bx bxl-whatsapp'></i>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="recentes-container">
+            <div class="recentes-content">
+                <div class="text-container">
+                    <h3 class="title-section">Veículos mais Recentes</h3>
+                    <p class="subtext-section">Carros novos e usados, confira os veículos mais recentes cadastrados em nosso <a href="">estoque.</a></p>
+                </div>
+    
+                <div class="row-container">
+                        <div class="card">
+                            <div class="card-veiculo-imagem">
+                                <a href="./template/veiculo.html">
+                                    <img src="./static/assets/images/carro teste 4.jpeg" alt="">
+                                </a>
+                            </div>
+                            <div class="card-veiculo-infos">
+                                <h2 class="tittle-container-veiculos">
+                                    <a href="./template/veiculo.html">
+                                        <div class="tittle-veiculo">
+                                            <span class="name-veiculo">Toyota - Yaris</span>
+                                            <span class="complemento-veiculo">XS Sedan 1.5 Flex 16V 4p Aut. - 2020</span>
+                                        </div>
+                                    </a>
+                                </h2>
+    
+                                <div class="div-price">
+                                    <p class="price-veiculo"> R$ 87.900,00</p>
+                                </div>
+    
+                            </div>
+                            <div class="div-lista-infos">
+                                <ul class="list-infos-veiculo">
+                                    <li>
+                                        <i class='bx bxs-tachometer'></i>
+                                        61.386
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-git-merge' ></i>
+                                        Automático
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-calendar'></i>
+                                        2020
+                                    </li>
+                                    <li>
+                                        <i class='bx bxs-gas-pump' ></i>
+                                        Álc./Gasol.
+                                    </li>
+                                    <li>
+                                        <i class='bx bxs-brush'></i>
+                                        Branca
+                                    </li>
+                                    <li>
+                                        4 Portas
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-veiculo-whats">
+                                <a href="https://wa.me/5547991224281" target="_blank">
+                                    <span>Whatsapp</span>
+                                    <i class='bx bxl-whatsapp'></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-veiculo-imagem">
+                                <a href="./template/veiculo.html">
+                                    <img src="./static/assets/images/carro teste 5.jpeg" alt="">
+                                </a>
+                            </div>
+                            <div class="card-veiculo-infos">
+                                <h2 class="tittle-container-veiculos">
+                                    <a href="./template/veiculo.html">
+                                        <div class="tittle-veiculo">
+                                            <span class="name-veiculo">Nissan - March</span>
+                                            <span class="complemento-veiculo">SV 1.6 16V FlexStart 5p Mec. - 2019</span>
+                                        </div>
+                                    </a>
+                                </h2>
+    
+                                <div class="div-price">
+                                    <p class="price-veiculo"> R$ 60.900,00</p>
+                                </div>
+    
+                            </div>
+                            <div class="div-lista-infos">
+                                <ul class="list-infos-veiculo">
+                                    <li>
+                                        <i class='bx bxs-tachometer'></i>
+                                        80.226
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-git-merge' ></i>
+                                        Manual
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-calendar'></i>
+                                        2019
+                                    </li>
+                                    <li>
+                                        <i class='bx bxs-gas-pump' ></i>
+                                        Álc./Gasol.
+                                    </li>
+                                    <li>
+                                        <i class='bx bxs-brush'></i>
+                                        Branca
+                                    </li>
+                                    <li>
+                                        4 Portas
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-veiculo-whats">
+                                <a href="https://wa.me/5547991224281" target="_blank">
+                                    <span>Whatsapp</span>
+                                    <i class='bx bxl-whatsapp'></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-veiculo-imagem">
+                                <a href="./template/veiculo.html">
+                                    <img src="./static/assets/images/carro teste 6.jpeg" alt="">
+                                </a>
+                            </div>
+                            <div class="card-veiculo-infos">
+                                <h2 class="tittle-container-veiculos">
+                                    <a href="./template/veiculo.html">
+                                        <div class="tittle-veiculo">
+                                            <span class="name-veiculo">Chevrolet - Onix</span>
+                                            <span class="complemento-veiculo">SEDAN Plus LT 1.0 12V Flex 4p Mec. - 2024</span>
+                                        </div>
+                                    </a>
+                                </h2>
+    
+                                <div class="div-price">
+                                    <p class="price-veiculo">R$ 85.900,00</p>
+                                </div>
+    
+                            </div>
+                            <div class="div-lista-infos">
+                                <ul class="list-infos-veiculo">
+                                    <li>
+                                        <i class='bx bxs-tachometer'></i>
+                                        49.308
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-git-merge' ></i>
+                                        Manual
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-calendar'></i>
+                                        2024
+                                    </li>
+                                    <li>
+                                        <i class='bx bxs-gas-pump' ></i>
+                                        Álc./Gasol.
+                                    </li>
+                                    <li>
+                                        <i class='bx bxs-brush'></i>
+                                        Prata
+                                    </li>
+                                    <li>
+                                        4 Portas
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-veiculo-whats">
+                                <a href="https://wa.me/5547991224281" target="_blank">
+                                    <span>Whatsapp</span>
+                                    <i class='bx bxl-whatsapp'></i>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+                <div class="row-container row-btn-estoque">
+                    <div class="div-btn-estoque">
+                        <a class="btn-todo-estoque" href="./template/estoque.html">
+                            <i class='bx bx-search'></i>
+                            Veja todo nosso estoque
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer id="footer" class="footer-one"></footer>
+
+    <script src="./static/js/slider_banner_inicio.js"></script>
+    <script src="./static/js/price_range.js"></script>
+</body>
+</html>

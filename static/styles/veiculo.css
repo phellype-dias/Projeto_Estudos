@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    padding: 0 auto;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato';
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+
+
+
+/* ######################################################## */
+
+.banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.image-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%; 
+}
+
+.banner-image {
+    width: calc(100% / 3); 
+    flex-shrink: 0; 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+/* @media screen and (max-width: 900px) {
+    .image-container {
+        grid-auto-columns: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .image-container {
+        grid-auto-columns: 100%;
+    }
+} */
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.nav-button img {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+
+#prev {
+    left: 10px;
+    top: 43%;
+    transform: rotate(180deg);
+}
+
+#next {
+    right: 10px;
+}
+
+
+/* ######################################################## */
+
+.bottom-banner {
+    width: 100%;
+    display: flex;
+    background-color: #222;
+}
+
+.bottom-banner-content {
+    display: flex;
+    justify-content: end;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.bottom-banner-button {
+    display: flex;
+    justify-content: center;
+    padding: 4vh 1.5vw;
+    width: max-content;
+    font-size: 17px;
+    text-decoration: none;
+    background-color: #0978b2;
+    color: #fff;
+    transition: 0.3s linear;
+}
+
+.bottom-banner-button:hover {
+    background-color: #c60210;
+    fill: #fb4d59;
+}
+
+
+
+.viv-corpo {
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    flex-direction: row;
+}
+/* ########################## - Header Corpo - ############################## */
+
+.viv-header-info{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    width: 100%;
+    padding-top: 2vh;
+    padding-bottom: 3vh;
+}
+.viv-title{
+    width: 75%;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.viv-title h1 {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.viv-price{
+    width: 25%;
+    display: flex;
+    justify-content: end;
+}
+
+.viv-price h2 {
+    color: #0978b2;
+    font-size: 42px;
+    font-weight: 900;
+}
+
+
+/* ######################################################## */
+
+
+/* ######################### - Description Corpo- ############################### */
+
+
+/* ######################################################## */
+
+.grid{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    padding-bottom: 7vh;
+}
+
+.description {
+    display: flex;  
+    flex-direction: column;
+    width: 75%;
+    gap: 7vh;
+}
+
+.viv-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.description .viv-cards ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.viv-description {
+    /* min-height: 113px; */
+    min-width: 123px;
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 26px;
+    border-radius: 1px; 
+    border: 1px solid #dcd9d9;
+    color: silver;
+    text-align: center;
+    
+}
+.viv-description i{
+    margin: 0;
+    font-weight: 500;
+    font-size: 44px;
+}
+.viv-description h3{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 32px;
+    color: #000;
+}
+.viv-description p{
+    font-size: 11px;
+    color: #0978b2;
+}
+
+/* ######################################################## */
+
+/* ######################################################## */
+
+.tab-container {
+    width: 100%;
+    border: 1px solid #dcd9d9;
+}
+
+.tabs {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #eee;
+    gap: 1%;
+}
+.tab-button {
+    background-color: #f1f1f1;
+    border: 1px solid gray;
+    padding: 0 30px;
+    font-weight: 400;
+    line-height: 66px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s ease;
+    
+}
+.tab-button:hover {
+    color: white;
+    background-color: #0978b2;
+}
+.tab-button.active {
+    background-color: #0978b2;
+    color: white;
+}
+.tab-content {
+    width: 100%;
+    padding: 30px;
+}
+.tab-pane{
+    width: 100%;
+    flex-direction: row;
+    display: none;
+}
+.tab-pane.active {
+    display: flex;
+}
+.content-acessorios{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.acessorio{
+    width: calc(100% / 3);
+    padding: 1em;
+}
+
+.acessorio h3{
+    display: flex;
+    align-items: center;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    gap: 5px;
+}
+.acessorio h3 i{
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+}
+.content-infos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.5vh;
+}
+.content-infos h3 {
+    font-size: 22px;
+    font-weight: 900;
+    color: #000;
+}
+.content-infos p{
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #555;
+}
+
+/* ######################################################## */
+
+/* ######################## - Aside Proposta - ################################ */
+
+.viv-proposal {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+
+}
+.button-whats {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px 4px 0px 0px;
+    background-color: #45C554;
+    color: #fff;
+    text-decoration: none;
+}
+.button-whats span{
+    text-shadow: 1px 1px black;
+}
+.button-whats i{
+    font-size: 24px;
+    color: #fff;    
+}
+.viv-side {
+    border: 1px solid #e6e6e6;
+    padding: 20px 16px 30px 16px;
+    position: relative;
+}
+
+.side-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: 24px;
+    gap: 5px;
+    margin-bottom: 3vh;
+}
+
+.side-title i{
+    line-height: 24px;
+    color: #0978b2;
+    font-size: 22px;
+}
+
+.side-title h2{
+    color: #000;
+    font-size: 20px;;
+}
+
+.viv-side form{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.viv-side label {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #666666;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.viv-side input, .viv-side textarea {
+    width: 100%;
+    background-color: #eee;
+    color: #888;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+::placeholder{
+    color: #888;
+}
+
+.viv-side input {
+    padding: 12px;
+}
+
+.viv-side textarea {
+    padding: 6px 12px;
+    resize: vertical;
+    text-align: left;
+    min-height: calc(1.2em * 4 + 12px);
+}
+
+.submit {
+    width: 100%;
+    background-color: #0978b2;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    justify-items: center;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+}
+.divider{
+    width: 100%;
+    border-bottom: 1px solid #dcd9d9;
+    margin: 5vh auto;
+}
+.div-btn-all-stock{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 7vh;
+    margin-bottom: 4vh;
+}
+.div-btn-all-stock a{
+    text-decoration: none;
+    padding: 7px 36px;
+    border-radius: 3px;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 800;
+    color: #fff;
+    background-color: #0978b2;
+    transition: .4s linear;
+}
+
+.div-btn-all-stock a:hover{
+    background-color: #c60210;
+    fill: #fb4d59;
+}
+
+

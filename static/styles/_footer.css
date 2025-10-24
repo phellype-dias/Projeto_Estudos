@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato';
+}
+
+:root{
+    --corCinza : #ccc;
+    --corBranca : #fff;
+    --corPreta: #000;
+    --valorMax: 100%;
+    --valor85: 85%;
+    --font0-9: .9em;
+    --font1-2: 1.2em;
+    --fontIconsRedes: 1.5em;
+    --footer-topColor: #222;
+    --footer-bottomColor: #191919;
+    --corRyze: cyan;
+}
+
+.container-footer{
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-one{
+    width: var(--valorMax);
+    min-height: 220px;
+    background-color: var(--corPreta);
+
+    & .footer-top{
+        background-color: var(--footer-topColor);
+        width: var(--valorMax);
+        padding: 7.5vh 0;
+
+        & .container-footer{
+
+            & .collun-content{
+                padding: 0 1vw;
+                flex: 1 1 20%;
+                max-width: 25%;
+                display: flex;
+                flex-direction: column;
+                gap: 4vh;
+
+                & h4{
+                    color: var(--corBranca);
+                    text-transform: uppercase;
+                }
+
+                & ul{
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1vh;
+                    margin-bottom: 2vh;
+
+                    & li {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: start;
+                        line-height: 24px;
+                        cursor: pointer;
+                        
+                        & a{
+                            display: flex;
+                            flex-direction: row;
+                            font-size: var(--font0-9);
+                            color: var(--corBranca);
+                            text-decoration: none;
+                            gap: 5px;
+                            transition: color .4s ease;
+
+                            & i{
+                                margin-top: 6px;
+                                align-self: flex-start;
+                                color: var(--corBranca);
+                                transition: color .4s ease;
+                            }
+                        }
+                    }
+                    & li:hover i, li:hover a{
+                        color: #0978b2;
+                        transition: color .4s ease;
+                    }
+                }
+            }
+        }
+    }
+
+    & .footer-bottom{
+        background-color: var(--footer-bottomColor);
+        width: var(--valorMax);
+        padding: 2vh 0;
+
+        & .container-footer{
+            
+            & .div-content{
+                flex: 1;
+                padding: 0 1vw;
+
+
+                & .logo-nossa{
+                    & h2{
+                        line-height: 30px;
+                        color: var(--corBranca);
+    
+                        & span{
+                            color: var(--corRyze);
+                        }
+                    }
+                }
+                & .midia-revenda{
+                    display: flex;
+                    justify-content: end;
+                    gap: 10px;
+
+                    & label{
+                        line-height: 30px;
+                        color: var(--corBranca);
+                        font-size: var(--font1-2);
+                    }
+                    & .icons-redes {
+                        display: flex;
+        
+                        & .list-icons{
+                            list-style: none;
+                            gap: 1vw;
+                            display: flex;
+        
+                            & li{
+                                display: flex;
+                                align-items: center;
+                                height: var(--valorMax);
+        
+                                & a {
+                                    text-decoration: none;
+                                    color: var(--corBranca);
+                                    font-size: var(--fontIconsRedes);
+                                    cursor: pointer;
+                                }
+                                & a:hover{
+                                    transition: color .4s ease;
+                                    color: var(--corCinza);
+                                }
+                            }
+                        }
+        
+                    }
+                }
+            }
+        }
+    }
+}
